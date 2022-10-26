@@ -1,0 +1,803 @@
+<html>
+<body>
+
+<!--
+<input type="submit" name="click" onclick="alert('hey dude')">\
+-->
+<!--
+<body onload="alert('welcome')">
+
+<input type="text" name="Emailaddress" size="40" value="Please enter Email address" onFocus="this.value=''"/>
+-->
+
+
+
+
+
+<script type="text/javascript">				
+
+
+		/*Exception Handling*/  
+
+	//meaning of exception handling is a method or process used to handle an abnormal statement in the code & execute them.
+	
+	/*
+		Types of errors
+
+	Syntax error
+	Runtime error
+	logical error
+	error object
+		-name
+		-message 
+	Eval error
+	Internal error
+	Range error
+	Reference error
+	Type error
+	URI error
+	
+	*/
+
+
+
+	
+
+	/*Named Function*/
+
+var x=function test(){
+	document.write("Hey Dude");		// this is also named annonymous function invoke by var name with function symbol->()
+
+	}
+x();
+
+
+
+	/*Arrow Function*/
+/*
+var x=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+
+document.write(x.filter(y=> y>=10 ));
+
+docuement.write(x.map(y=> y+2));
+*/
+
+
+/*					
+var calme=()=> document.write("<br> Hey Buddy");	//without naming Arrow function 
+					
+
+calme();
+*/
+
+/*
+var sum=(a,b)=> a+b;				// example 1
+
+document.write(sum(20,40.8))
+
+var sum=(a,b)=> a*b;				//example 2
+
+document.write("<br>"+sum(2,5))
+
+var sum=a=> a*a;				//example 3
+
+document.write("<br>"+sum(5))
+
+var sum1=b=>{
+	return b*b;				//example 4
+	}
+
+document.write("<br>"+sum1(50))
+*/
+
+/*
+var sum1=name=>({name:name} );		//failed 
+
+document.write("<br>"+sum1(
+))
+*/
+
+	/*Annonymous function*/
+/*
+var x=function(){
+	document.write("Hi Hunk");
+}						// here function is declared in variable name x, then we call variable name and function()
+
+x();						// Annonymous function
+*/
+
+
+/*
+var x=(function test(){
+	document.write("Hi munk");
+	});
+						// here the function is declared to variable within brackets and call function name is x();
+	x();	
+*/
+
+
+	/*Math Object*/
+
+	// JavaScript provides 8 Mathematical constants
+/*
+console.log(Math.E);		//Euler's
+console.log(Math.PI);		//PI
+console.log(Math.SQRT2);	//Square root of 2
+console.log(Math.SQRT1_2);	//Square root of 1/2
+console.log(Math.LN2);		//natural logarithm 2
+console.log(Math.LN10);		//natural logarithm 10
+console.log(Math.LOG2E);	//base 2 logarithm of E
+console.log(Math.LOG10E);	//base 10 logarithm of E
+*/
+
+
+	/*Date Object*/
+/*
+var MyDate=new Date()
+
+console.log(MyDate);
+
+var timeNow=MyDate.getHours() ;
+
+console.log(timeNow);
+
+var Min= MyDate.getMinutes();
+
+console.log(Min);
+
+var Sec=MyDate.getSeconds();
+
+console.log(Sec);
+
+var Day=MyDate.getDay();
+
+console.log(Day);
+
+var Date=MyDate.getDate();
+
+console.log(Date);
+
+var Mon=MyDate.getMonth();
+
+console.log(Mon);
+
+var Year=MyDate.getYear();
+
+console.log(Year);
+
+var fullDate=MyDate.getFullYear(08/09/2022);
+
+console.log(fullDate);
+*/
+	/*End of Date Object*/
+
+
+	/*Using predefind function like call(), bind(), apply()*/
+
+
+	// Apply() method used between two array
+/*
+var member={
+	FN:"Hari",
+	LN:"Haran"	
+		}
+
+var mem2={
+	FN:"Sridhar",
+	LN:"Thamizh",				//bind meaning is one object with function can process other object by the give structured function
+	FullName:function(Edu1,Edu2){
+		return this.FN+" "+this.LN+", "+Edu1+", "+Edu2;
+			}
+	}
+	console.log(mem2.FullName.apply(member,["BSC","MCA"]));		
+*/
+
+
+
+
+
+
+
+/*
+var har=["Idly","Dosa","Pongal"];
+var sri=["Biriyani","Fishfry","Mutton"];
+
+sri.push.apply(sri,har)
+document.write(sri);
+*/
+	// Apply() method applied in object
+
+
+	// bind() method
+/*
+var member={
+	FN:"Hari",
+	LN:"Haran"	
+		}
+
+var mem2={
+	FN:"Sridhar",
+	LN:"Thamizh",				//bind meaning is one object with function can process other object by the give structured function
+	FullName:function(){
+		return this.FN+" "+this.LN+" ";
+			}
+		}
+	
+var Full=console.log(mem2.FullName.bind(member));
+
+console.log(mem2.FullName())
+console.log(Full());
+console.log(mem2.FN);
+console.log(mem2.LN);
+console.log(member.FN);
+*/
+
+
+
+
+
+
+
+	// call() method 
+/*
+const chan={channel_name:"Sun",
+		channel_no:02,
+		type:"Entertainment"}
+
+const chann={channel_name:"Sun music",			// this is mainly process a object can call by other object by the give structed function
+		channel_no:20,
+		type:"music"}
+
+const channel={	
+		hello:function(){
+return this.channel_name+" channel no "+ this.channel_no+" is full of "+this.type;}
+			}
+
+console.log(channel.hello.call(chann));
+console.log(chann.channel_name);
+*/
+
+
+// object inside function
+/*
+
+let tk={ First_Name:"Thiru", Company:"IBM", Position:"Web Deloper",
+	me:function(){
+	return this.First_Name+" is "+ this.Company+" company" +this.Position+" in Bangalore";
+	}
+   }
+
+document.write(tk.Company+"<br>");
+document.write(tk.me());
+*/
+
+//---------------- Creating objects in 3 different ways -----------------
+
+	/* TYPE 1 - Instance of object */
+/*
+var a=0 			//creating a variable interget
+var b='s'			//creating character variable
+var c="This is string example"	// creating string variables
+
+var d=new Object({	Name:"Hariharan",
+		father:"Thamizh",
+		sex:"male",			
+		sports: ["cricket","carrom","badmiton"],
+		greet:function(){console.log("hi dube");	// pass creating instance of object
+	},	
+ 		brother:"Sridhar",
+		UG:75,
+		PG:68});		
+*/
+
+
+
+/*
+const vp=new Object();
+vp.name="lacky";
+vp.id=101;
+vp.salary=25000;
+
+						// this is also creating instance object 
+document.write(vp.id + "<br>");
+document.write(vp.salary+ "<br>");
+document.write(vp.name+ "<br>")
+*/
+
+	/*End of Instance object*/
+
+
+		/*TYPE 2 -using Object Literals*/	
+/*	
+var familyDetails={	Name:"Hariharan",
+		father:"Thamizh",
+		sex:"male",			//pass creating an Object literals
+		age:26,
+		sports: ["cricket","carrom","badmiton"],
+		greet:function(){console.log("hi dube");
+	},	
+ 		brother:"Sridhar",
+		UG:75,
+		PG:68}	
+console.log(familyDetails.age);
+console.log(familyDetails.greet());
+console.log(familyDetails.sports);
+console.log(familyDetails.sports[1]);
+console.log(familyDetails.PG);
+*/
+		/*End of Literal object*/
+
+
+		/*TYPE 3 object creating on constructor function*/
+/*
+ function fam(name, age,sex){
+	this.name=name;
+	this.age=age;
+	this.sex=sex;
+	}
+
+var hr=new fam("hari",28,"Male");	
+var sr=new fam("Sri",21,"Male");
+var mr=new fam("malini",48,"Female");
+	
+document.write(hr.age+"<br>");
+document.write(sr.age +"<br>");
+document.write(mr.age +"<br>");
+*/
+		/*End of Object constructor function*/
+
+
+//--------------objects End ---------------
+
+/*
+var mx=0;
+var size=prompt("Please Enter Size: ");
+var nums=new Array();
+for(i=0;i<size;i++){				//pass Displaying and adding array values
+nums[i]=parseInt(prompt("Enter Values: "))
+}
+
+for(var j=0;j<size;j++){
+document.write(nums[j]+"<br>");
+mx+=nums[j];
+}
+document.write("Additions:<br>" +mx);
+*/
+
+
+
+/*
+for(var num=0;num<10;num++){		//pass for loop used to run repeated same values
+document.write(num +"<br>");
+}*/
+
+
+/*
+var a=5;
+do{
+document.write("*");
+a++;				//pass checked do while loop used false condition & true condition
+document.write("<br>");
+}while(a<10);
+*/
+
+
+/*
+var a=10;
+while(a>0){
+document.write(a+"<br>");
+a--;				//pass Checked while loop used pre increment & post increment
+}				//pass checked while loop used pre decrement & post decrement
+*/
+
+
+
+/*
+var name="l";
+var fName={};
+var num=2;
+			//pass 	checked string+number=valueshown & typeof is string
+			//pass	checked string+number=value as NaN & typeof is number
+			//pass	checked string-number=value as NaN & typeof is number
+			//pass	checked string/number=value as NaN & typeof is number
+			//pass	checked string%number=value as NaN & typeof is number
+			
+var a=num%name;
+var b=num*name;
+var c=(a!=b)? "True":"False"; 	// checked NaN==NaN is true or fale
+document.write(c);		//answer is 'false' because NaN is unique.
+
+*/
+
+
+
+
+/*
+ var num=2334243n;
+var num2=3;				//pass bigInt is not a number. It cannot do calculation with other numbers
+console.log(num);
+*/
+
+/*
+var num=new Array();
+num[0]="hello";
+num[1]=23;
+num[2]='twenty';
+					//pass type 4 Array declared and individually displayed
+document.write(typeof num[0]);
+*/
+
+
+/*
+const sic=["Thiru", "hari", "Madesh", "Deepak"];
+console.log(sic);				//pass type 3 - arrays declared
+*/
+
+
+					
+/*
+var sic=[];
+sic[0]="Thiru";
+sic[1]="Hari";
+sic[2]="baarath";
+sic[3]="barath";			//pass type 2 - arrays declared
+
+document.write(sic);
+*/
+
+
+/*
+var sic=new Array("Thiru","Hari","Baarath");
+console.log(sic);		
+					//pass type 1 - arrays declared
+document.write(sic);
+*/
+
+
+/*
+var alpha=prompt("Please enter ur name: ");
+alert("hello"+ alpha);					//pass prompt(),alert(),window.confirm() checked
+window.confirm("Are you sure to remeber your name");
+*/
+
+/*
+var i=10;
+
+if(i<15){
+document.write("the i value is 10");
+						// pass if else condition checked using integer values 
+}
+else{
+document.write("the i value is lessthan compared value");
+}
+*/
+
+
+
+/*
+var password="tellme";  //key
+
+switch(password){	
+			
+case "tellme":		
+
+document.write("worng password");
+break;
+						//pass switch case used to check correct string and incorrect values and default values
+case "fealme":
+document.write("worng password");
+break;
+
+case "callme":
+document.write("Access granted");
+break;
+
+default:
+document.write("invalid password");
+
+}
+*/
+
+
+
+/*
+var time=12;
+var cat=(time<12)? "Good morning" : " good afternoon";  //pass checked short hand if condition using var datatypes
+document.write(cat);
+*/
+
+
+/*
+const a=10;
+
+console.log(a);
+	// pass
+	//checked var defined in initial state 2) checked var initialized in after declared
+	// checked let defined in initial state 4) checked let with other data types
+	//checked const defined in initial state and later state also.
+
+const a;
+console.log(a);	
+*/
+
+
+/*
+var a=2 ; 
+var b=2 ;
+
+var c="5";
+var d = 0; 
+d=  a + b + c ; 
+			//Pass concate operator used string variables
+console.log(d);
+*/
+
+
+/*
+var a=2, b=5;
+
+var c = (a>b)? "a is bigger" : "b is bigger";
+
+ 
+			// PASS conditional operator using comparison operator
+console.log(c);
+*/
+
+
+/*
+var a=2, b=5;
+
+var c=13;
+
+ c %=b; 
+			// pass when initial value declared then assignment operator
+console.log(c);
+*/
+
+
+/*
+var a=2, b=5;
+
+var c=10;
+
+ c /=b; 
+			// PASS when initial value declared then assignment operator
+console.log(c);
+*/
+
+
+
+/*
+var a=2, b=5;
+
+var c=3;
+
+ c *=b; 
+			// PASS when initial value declared then assignment operator
+console.log(c);
+*/
+
+
+
+/*
+var a=2, b=5;
+
+var c=10;
+
+ c -=b; 
+			// pass when initial value declared then assignment operator
+console.log(c);
+*/
+
+
+
+
+/*
+var num1=3, num2=4;
+
+var num3=45;
+ num3 = num3 + 44;
+				
+				//pass when var initial the type then Assignment operator (=) operator
+console.log(num3);
+num3 +=num2;
+console.log(num3);
+*/
+
+
+/*
+var num1=3, num2=3;
+
+num3 = num2;
+
+					//pass Assignment operator (=) operator 
+console.log(num3);
+*/
+
+/*
+var num1=3, num2=3;
+
+num3 = (!(num1<=num2) ||(num1>num2));
+
+					//pass Logical NOT (!) operator used in other logical OR (or) AND operators 
+console.log(num3);
+*/
+
+/*
+var num1=3, num2=3;
+
+num3 = num1<=num2 || num1>num2;
+
+					//Pass Logical OR (||) operator used comparsion operators 
+console.log(num3);
+*/
+
+
+/*
+var num1=3, num2=3;
+
+num3 = num1>=num2 && num1<num2;
+
+					//pass Logical And (&&) operator used comparsion operators 
+console.log(num3);
+*/
+
+/*
+var a=2, b=5;
+
+var c=10;
+
+ c = a!==b; 
+			// PASS when initial value declared then assignment operator
+console.log(c);
+*/
+
+
+
+/*
+var num1=3, num2='3';
+
+num3 = num1===num2;
+
+					//Comparison operator trible equalto int values
+console.log(num3);
+*/
+
+/*var num1=6, num2=3;
+
+num3 =(num1<num2);
+
+					//pass Comparison operator  smaller than int values
+console.log(num3);
+*/
+
+/*
+var num1=6, num2=3;
+
+num3 =num1>num2;
+
+					//pass Comparison operator Greater than int values
+console.log(num3);
+*/
+
+
+/*
+var num1=6, num2=3;
+
+num3 =num1>=num2;
+
+					//pass Comparison operator Greater  than or equal int values
+console.log(num3);
+*/
+
+
+
+/*
+var num1=6, num2=3;
+
+num3 =num1<=num2;
+
+					//pass Comparison operator Smaller than or equal int values
+console.log(num3);
+
+*/
+
+
+
+/*
+var num1=6, num2=3;
+
+num3 =num1!=num2;
+
+					//Pass Comparison operator Not equal int values
+console.log(num3);
+*/
+
+
+/*
+var num1=6, num2=3;
+
+num3 =num1==num2;
+
+					//Pass Comparison operator Double equal int values
+console.log(num3);
+*/
+
+/*
+var num1=101, num2=10;
+
+num3 =num1%num2;
+
+					//Pass Arthmetic operator modulos int values
+console.log(num3);
+*/
+
+
+
+
+
+
+/*
+var num1=6, num2=3;
+
+num3 =num1/num2;
+
+					//Pass Arthmetic operator Division int values
+console.log(num3);
+*/
+
+
+
+
+
+
+/*
+var num1=6, num2=3;
+
+num3 =num1*num2;
+
+					//Pass Arthmetic operator Multiply int values
+console.log(num3);
+*/
+
+
+
+
+
+/*
+var num1=21, num2=18;
+
+num3 =num1-num2;
+
+				//pass Arthmetic operator Subaration int values
+console.log(num3);
+*/
+
+
+
+/*
+var num1=2454.54, num2=3.65;
+
+num3 =num1+num2;
+
+					//pass Arthmetic operator add float values
+document.write(num3);
+*/
+
+
+
+
+/*
+	var Name="Biju"
+	var l_name="Menon"
+	var fName="Joshpen"
+					//pass Variable declared with different Naming Convension
+console.log(Name);
+console.log(l_name);
+console.log(fName);
+
+*/
+
+</script>
+</body>
+</html>
