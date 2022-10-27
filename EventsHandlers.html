@@ -1,0 +1,237 @@
+<html>
+	<head>
+		<title>Events Handler</title>
+
+	</head>
+	<body>
+<!--	
+		onclick Eventhandler
+
+	<button onclick="kick()">Click</button>
+
+	<input type="file" onclick="kick()"></input>
+
+	<input type="checkbox" onclick="kick()"></input>
+
+	<input type="radio" onclick="kick()">hel</input>
+
+	<input type="submit" onclick="kick()" value="submit"></input>
+
+	<input type="reset" onclick="kick()" value="clear"></input>
+
+	<a href="#" onclick="kick()">Click</a>
+
+-->	
+
+<!--
+
+		dblclick Eventhandler		
+	
+	<button ondblclick="kick()">Click</button>
+
+	<input type="file" ondblclick="kick()"></input>
+
+	<input type="checkbox" ondblclick="kick()"></input>
+
+	<input type="radio" ondblclick="kick()">hel</input>
+
+	<input type="submit" ondblclick="kick()" value="submit"></input>
+
+	<input type="reset" ondblclick="kick()" value="clear"></input>
+
+	<a href="#" ondblclick="kick()">Click</a>
+-->
+
+<!--
+	<form>
+	
+	<input type="file" onchange="kick()"></input>
+
+	<input type="text" id="ke" onChange="kick()" ></input>
+		
+	<p id="de"></p>
+	</form>	
+-->
+
+
+<!--					Onfocus and onblur
+	<form id="myfun">
+		<input type="window"  id="mytxt"/>
+	<form>
+-->
+
+
+
+<!--	
+					onerror
+	<img src="C:\Users\Public\Pictures\Sample Pictures\Tulip.jpg" id="myfun">
+
+
+	<p id="demo"></p>
+-->
+
+
+<!--				
+				onkeydown 
+	<input type="textarea" id="fun">	
+-->
+ 
+
+<!--
+	<input type="text" id="fun" > 			<!--onkeypress="func()
+-->
+
+<!--
+	<input type="text" id="fun" >				<!--onkeyup="func()"
+
+-->
+<!--
+	<img src="C:\Users\Public\Pictures\Sample Pictures\Tulips.jpg" id="myfun">
+						
+	<p id="demo"></p>				<!--Onload for image
+-->
+
+
+
+<input type="button" id="fun" value="but">
+<br>
+
+<p id="demo">HII</p>
+
+
+
+
+
+
+
+
+	<script>
+
+		document.getElementById("fun").addEventListener("mousedown",func);
+		function func(){
+
+		document.getElementById("demo").style.color="red";
+		}
+
+
+		/*
+		document.getElementById("myfun").addEventListener("load",func());
+	
+		function func(){
+		document.getElementById("demo").innerHTML="Image Loading";
+		}
+		*/
+		
+
+		/*
+		document.getElementById("fun").addEventListener("keyup",func);
+
+		function func(){
+			document.getElementById("fun").style.backgroundColor="skyblue";
+		}*/
+
+
+		/*
+				//Type 2 direct onkeyup used in text box on alert when pressed key is releasing time only, it has each and every key released only alert.
+		function func(){
+			alert("Key uping");
+		}*/
+
+
+	
+		/*		
+			//Type 1 onkeypress using id and eventlistener and function
+		document.getElementById("fun").addEventListener("keypress",func);
+
+		function func(){
+			document.getElementById("fun").style.backgroundColor="skyblue";
+		}
+		*/
+
+
+
+
+		/*
+			//Type 2 direct onkeypress used in text box on alert pressing by each keys
+		function func(){
+			alert("Key pressed");
+		}*/
+
+
+
+
+
+	
+	/*			// Type 1 onkeydown used by id and eventlistener and function  
+					
+	document.getElementById("fun").addEventListener("keydown",func);
+
+	function func(){
+		document.getElementById("fun").style.backgroundColor="yellow";
+		}*/
+
+
+
+
+				//Type 2 direct onkeydown used in text box on alert pressing by each keys
+	/*function func(){
+		alert("your entering values in textbox");
+		}*/	
+
+
+		/*
+				// type 1 onerror using eventlistener
+		document.getElementById("myfun").addEventListener("error",func);
+
+		function func(){
+		document.getElementById("demo").innerHTML="Image does not load";
+			}
+
+ 				//type 2 onerror using direct function but onerror defined in img tag directly
+		function myfunction(){
+				alert("Image does not load this page");
+			}*/
+
+
+
+
+
+
+
+		/*						//onblur and onfocus using eventlistener and functions 
+		x=document.getElementById("myfun");
+		x.addEventListener("focus",myfocus,true);
+		x.addEventListener("blur",myblur,true);
+
+	
+
+		function myblur(){
+		document.getElementById("mytxt").style.backgroundColor="";
+		}
+
+		function myfocus(){
+		document.getElementById("mytxt").style.backgroundColor="red";
+		}
+		*/
+
+
+		/*
+		function kick(){
+								//onclick and dblclick function		
+		var x=document.getElementById("ke").value;
+		
+		document.getElementById("de").innerHTML="Your Name is " +x;
+		
+		}*/
+
+		
+		/*
+		function kick(){
+		alert("Hi Dude");
+		}*/
+	
+
+
+		</script>
+	</body>
+</html>
